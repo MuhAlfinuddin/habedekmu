@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+    margin: 0;
+    min-height: 100vh; /* ganti height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* biar mulai dari atas */
+    color: rgb(252, 252, 252);
+
+    background: linear-gradient(-45deg, #0f2027, #1c1c1c, #2c5364, #000000);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+
+    overflow-y: auto; /* biar bisa scroll */
+    padding: 40px 0; /* kasih jarak atas bawah */
+}
+
+        /* animasi background */
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* glow effect */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #00cfff;
+            filter: blur(180px);
+            top: -100px;
+            left: -100px;
+            z-index: -1;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #00ffb3;
+            filter: blur(180px);
+            bottom: -100px;
+            right: -100px;
+            z-index: -1;
+        }
+
+        /* container */
+        .ucapan-page {
+            text-align: center;
+            padding: 40px;
+
+            /* glass effect */
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+
+            box-shadow: 0 0 30px rgba(245, 241, 241, 0.5);
+
+            animation: fadeIn 2s ease;
+        }
+
+        /* animasi muncul */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* judul */
+        .ucapan-page h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgb(255, 241, 46);
+        }
+
+        /* isi */
+        .ucapan-page p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin: 18px 0;
+
+    /* BIAR RAPI */
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+
+    /* BATASI LEBAR BIAR ENAK DIBACA */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* EFEK ESTETIK */
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 0 5px rgb(207, 92, 167);
+    
+}
+
+
+        /* tombol */
+        .ucapan-page a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+
+            background: linear-gradient(45deg, #00cfff, #00ffb3);
+            box-shadow: 0 0 15px rgba(0,255,200,0.6);
+
+            transition: 0.3s;
+        }
+
+        .ucapan-page a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0,255,200,1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ucapan-page">
+        <h1>💖 Happy Birthday 💖</h1>
+
+<p>
+selamat ulang tahun sayangg akuuu🎉🎉
+semogaa di umur kmu sekarang ini 20 tahunn inii, bisa menjadi kepribadian yang baikk, tambah rajin dalam hal apapun, 
+lancar terus rejekinyaa, selalu di berikan kesehatan, di umur sekarng ini semoga keinginanmu semua tercapai terwujud satu² yaa,
+aku berharap kmu tidak kehilangan semangat dalam hari hari mu itu, aku pengen diusia kmu ini kamu berani mengejar apapun ituu,
+pokoknya di lancarkan segala urusannnya dan diberi kemudahan, Aamiin
+</p>
+
+<p>
+diumur ini semogaa kmu selalu siapp dalam tantangan apapun itu, mau itu dari perjalanan kmu, keluarga kmu, dan lain lain
+congratsss jugaa yaa atas jabatan ketuaa kmuu ituu, semogaa kmu bisa membimbing teman teman kmu, slalu diberii kesabaran,
+lancarr trus yaa prokerrnyaa, semoga kmu memilih menjadi ketua ini tidakk mengganggu perkuliahan kmu
+Dan aku mau bilang makasii udaa mauu berkomitmen sama akuu sampai titik sekarang ini, maaf jugaa masihh sering bikin kmu marah kesel kecewa,
+semoga kita kedepannya menjadi lebih baikk dari pada sebelumnyaa, semogaa kita kedepannya bisaa nentuinn susasana baruu nyaa, makasihh kmuu udaa selalu sabar sama sikap akuu sifat akuu
+makaciww udaa mau berubah demi akuu, maafkan aku yang belum bisaa ganti semua yang kmu lakukan ke akuu.
+</p>
+
+<p>
+makasiii jugaa udaa mau terima keluh kesah akuu
+maaf yaa belum bisaa jadi yang apa kmu ingin kan yang kmu mintaa, tapi dari itu semuaa aku mau usaha apa yang kmu inginkan
+lovee you moreee sayangg akuuu🌹❤️❤️❤️❤️
+maaf klo kesan nya ucapan ini engga ada artinya buat kmu, maaf juga klo ucapannya engga nyambung atau susah kmu buat ngertii
+lovee youuuuu sayanggggg akuuu hanaaa labibatulll maidaaa
+♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡
+
+</p>
+
+        <a href="index.html">← Kembali</a>
+    </div>
+
+</body>
+</html>
